@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Timeline() {
 	return (
-		<ol className="relative border-l border-gray-200 dark:border-gray-700">
+		<ol className="relative border-l border-gray-700">
 			<li className="mb-10 ml-6">
-				<span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+				<span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-900 rounded-full ring-8 ring-gray-900">
 					<svg
 						aria-hidden="true"
-						className="w-3 h-3 text-blue-600 dark:text-blue-400"
+						className="w-3 h-3 text-blue-400"
 						fill="currentColor"
 						viewBox="0 0 20 20"
 						xmlns="http://www.w3.org/2000/svg"
@@ -19,16 +19,16 @@ export default function Timeline() {
 						></path>
 					</svg>
 				</span>
-				<h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+				<h3 className="flex items-center mb-1 text-lg font-semibold text-white">
 					BlairHacks_6
-					<span className="bg-blue-100 text-red-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-200 dark:text-red-800 ml-3">
+					<span className="bg-red-200 text-red-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">
 						Upcoming
 					</span>
 				</h3>
-				<time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+				<time className="block mb-2 text-sm font-normal leading-none text-gray-500">
 					Feburary 17th-18th, 2023
 				</time>
-				<p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+				<p className="mb-4 text-base font-normal text-gray-400">
 					BlairHacks_6 is a 24-hour hackathon hosted by MBHS students in Silver
 					Spring, MD. At BlairHacks, high school students in the DMV area are
 					challenged to bring their innovative ideas to life in the form of
@@ -37,10 +37,10 @@ export default function Timeline() {
 				</p>
 			</li>
 			<li className="mb-10 ml-6">
-				<span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+				<span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-900 rounded-full ring-8 ring-gray-900">
 					<svg
 						aria-hidden="true"
-						className="w-3 h-3 text-blue-600 dark:text-blue-400"
+						className="w-3 h-3 text-blue-400"
 						fill="currentColor"
 						viewBox="0 0 20 20"
 						xmlns="http://www.w3.org/2000/svg"
@@ -52,16 +52,16 @@ export default function Timeline() {
 						></path>
 					</svg>
 				</span>
-				<h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+				<h3 className="mb-1 text-lg font-semibold text-white">
 					BlairHacks Mini &apos;22
-					<span className="bg-blue-100 text-red-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-200 dark:text-red-800 ml-3">
+					<span className="bg-red-200 text-red-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">
 						Upcoming
 					</span>
 				</h3>
-				<time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+				<time className="block mb-2 text-sm font-normal leading-none text-gray-500">
 					December 10th, 2022
 				</time>
-				<p className="text-base font-normal text-gray-500 dark:text-gray-400">
+				<p className="text-base font-normal text-gray-400">
 					Introducing BlairHacks&apos; newest event (and first IRL event since
 					2020)! BlairHacks Mini is a day-long event where high school students
 					around Montgomery County will come together to build apps, games, and
@@ -70,10 +70,10 @@ export default function Timeline() {
 				</p>
 			</li>
 			<li className="ml-6">
-				<span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+				<span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-900 rounded-full ring-8 ring-gray-900">
 					<svg
 						aria-hidden="true"
-						className="w-3 h-3 text-blue-600 dark:text-blue-400"
+						className="w-3 h-3 text-blue-400"
 						fill="currentColor"
 						viewBox="0 0 20 20"
 						xmlns="http://www.w3.org/2000/svg"
@@ -85,16 +85,16 @@ export default function Timeline() {
 						></path>
 					</svg>
 				</span>
-				<h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+				<h3 className="mb-1 text-lg font-semibold text-white">
 					BlairHacks_5
-					<span className="bg-blue-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800 ml-3">
+					<span className="bg-green-200 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">
 						Archive
 					</span>
 				</h3>
-				<time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+				<time className="block mb-2 text-sm font-normal leading-none text-gray-500">
 					Feburary 18th-20th, 2022
 				</time>
-				<p className="text-base font-normal text-gray-500 dark:text-gray-400">
+				<p className="text-base font-normal text-gray-400">
 					BlairHacks_5 is a 36-hour hackathon hosted by MBHS students in Silver
 					Spring, MD. At BlairHacks, high school students in the DMV area are
 					challenged to bring their innovative ideas to life in the form of

@@ -3,7 +3,7 @@ import Timeline from "../components/Timeline";
 
 export default function Home() {
 	return (
-		<div className="text-white p-8 md:p-16">
+		<div>
 			<div className="pb-16">
 				<h1 className="font-bold text-4xl md:text-7xl">BlairHacks</h1>
 				<p className="text-sm md:text-xl">

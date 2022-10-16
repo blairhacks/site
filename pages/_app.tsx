@@ -10,7 +10,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<Nav />
 			</div>
 			<div className="pl-16">
-				<Component {...pageProps} />
+				<div className="text-white p-8 md:p-16">
+					<Component {...pageProps} />
+				</div>
 			</div>
 		</div>
 	);

@@ -21,7 +21,9 @@ export default function Nav() {
 				<Link href="/team">
 					<AiOutlineTeam className="h-12 w-12 p-2 rounded-lg cursor-pointer hover:bg-gray-800" />
 				</Link>
-				<BiDonateHeart className="h-12 w-12 p-2 rounded-lg cursor-pointer hover:bg-gray-800" />
+				<Link href="/donate">
+					<BiDonateHeart className="h-12 w-12 p-2 rounded-lg cursor-pointer hover:bg-gray-800" />
+				</Link>
 			</div>
 		</div>
 	);

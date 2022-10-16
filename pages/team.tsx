@@ -46,7 +46,7 @@ export default function Team() {
 		<div className="text-center">
 			<h1 className="font-bold text-4xl pb-10">Our Team</h1>
 			<div className="flex justify-center">
-				<div className="flex gap-5">
+				<div className="flex flex-wrap gap-5 justify-center">
 					{team.map((member, i) => (
 						<div key={i}>
 							<a href={member.website} target="blank">

@@ -88,7 +88,7 @@ export default function Timeline() {
 				<h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
 					BlairHacks_5
 					<span className="bg-blue-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800 ml-3">
-						Completed
+						Archive
 					</span>
 				</h3>
 				<time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">

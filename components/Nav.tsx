@@ -7,7 +7,7 @@ import { BiDonateHeart } from "react-icons/bi";
 export default function Nav() {
 	return (
 		<div className="w-fit">
-			<div className="p-2 text-gray-500 rounded-lg bg-gray-900">
+			<div className="flex md:flex-col gap-2 p-2 text-gray-500 rounded-lg bg-gray-900">
 				<Link href="/">
 					<img
 						className="w-12 cursor-pointer"

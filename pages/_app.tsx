@@ -10,19 +10,22 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 	return (
 		<div>
-			{!ignoreNav.includes(router.pathname) && (
-				<div>
-					<div className="flex justify-center fixed pl-3 top-1/3">
-						<Nav />
-					</div>
-					<div className="pl-16">
-						<div className="text-white p-8 md:p-16">
-							<Component {...pageProps} />
-						</div>
-					</div>
+			<div className="flex justify-center fixed pl-3 md:pl-3 pt-3 md:pt-0 bottom-5 md:top-3 z-50">
+				<Nav />
+			</div>
+			<div
+				className={`${
+					!ignoreNav.includes(router.pathname) && "pb-16 md:pb-0 md:pl-16"
+				}`}
+			>
+				<div
+					className={`text-white ${
+						!ignoreNav.includes(router.pathname) && "p-8 md:p-16"
+					}`}
+				>
+					<Component {...pageProps} />
 				</div>
-			)}
-			{ignoreNav.includes(router.pathname) && <Component {...pageProps} />}
+			</div>
 		</div>
 	);
 }

@@ -35,7 +35,7 @@ const team = [
 		name: "Patrick Zhang",
 		position: "Logistics Lead",
 		email: "patrick@blairhacks.com",
-		website: "https://www.linkedin.com/in/patrick-w-zhang/",
+		website: "https://pertark.com",
 		image:
 			"https://media-exp1.licdn.com/dms/image/C4E03AQHFvK1pasAP7Q/profile-displayphoto-shrink_200_200/0/1662428152507?e=1671667200&v=beta&t=lme-SgLSo8b4mepajSqUJOSajkCYwF5nakU-1VagkqY",
 	},

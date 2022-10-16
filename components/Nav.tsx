@@ -9,7 +9,11 @@ export default function Nav() {
 		<div className="w-fit">
 			<div className="p-2 text-gray-500 rounded-lg bg-gray-900">
 				<Link href="/">
-					<img className="w-12 cursor-pointer" src="/assets/logo.png" />
+					<img
+						className="w-12 cursor-pointer"
+						src="/assets/logo.png"
+						alt="BlairHacks Logo"
+					/>
 				</Link>
 				<Link href="/">
 					<HiOutlineHome className="h-12 w-12 p-2 rounded-lg cursor-pointer hover:bg-gray-800" />

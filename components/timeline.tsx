@@ -53,7 +53,7 @@ export default function Timeline() {
 					</svg>
 				</span>
 				<h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-					BlairHacks Mini '22
+					BlairHacks Mini &apos;22
 					<span className="bg-blue-100 text-red-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-200 dark:text-red-800 ml-3">
 						Upcoming
 					</span>
@@ -62,9 +62,9 @@ export default function Timeline() {
 					December 10th, 2022
 				</time>
 				<p className="text-base font-normal text-gray-500 dark:text-gray-400">
-					Introducing BlairHacks' newest event (and first IRL event since 2020)!
-					BlairHacks Mini is a day-long event where high school students around
-					Montgomery County will come together to build apps, games, and
+					Introducing BlairHacks&apos; newest event (and first IRL event since
+					2020)! BlairHacks Mini is a day-long event where high school students
+					around Montgomery County will come together to build apps, games, and
 					hardware. Look forward to a day of hands-on coding + tech workshops,
 					fun activities, and more!
 				</p>

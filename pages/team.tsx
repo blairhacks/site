@@ -47,12 +47,13 @@ export default function Team() {
 			<h1 className="font-bold text-4xl pb-10">Our Team</h1>
 			<div className="flex justify-center">
 				<div className="flex gap-5">
-					{team.map((member) => (
-						<div>
+					{team.map((member, i) => (
+						<div key={i}>
 							<a href={member.website} target="blank">
 								<img
 									className="rounded-full h-36 w-36 hover:scale-105 transform transition duration-300 mb-5"
 									src={member.image}
+									alt={member.name}
 								/>
 							</a>
 							<h2>{member.name}</h2>

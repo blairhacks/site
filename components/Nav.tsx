@@ -24,9 +24,9 @@ export default function Nav() {
 						className="h-12 w-12 p-2 rounded-lg hover:bg-neutral-800 sm:cursor-pointer"
 					/>
 				</Link>
-				<Link href="/donate">
+				<Link href="/sponsors">
 					<BiDonateHeart
-						color={router.pathname === "/donate" ? "white" : undefined}
+						color={router.pathname === "/sponsors" ? "white" : undefined}
 						className="h-12 w-12 p-2 rounded-lg hover:bg-neutral-800 sm:cursor-pointer"
 					/>
 				</Link>

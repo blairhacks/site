@@ -3,13 +3,14 @@ import { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import "../styles/globals.css";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const router = useRouter();
 	const ignoreNav = ["/donate"];
 
 	return (
-		<div>
+		<div className="h-full flex flex-col justify-between">
 			<div className="flex justify-center fixed pl-3 md:pl-3 pt-3 md:pt-0 bottom-5 md:top-3 z-50">
 				<Nav />
 			</div>
@@ -26,6 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 					<Component {...pageProps} />
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 }

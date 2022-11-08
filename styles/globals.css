@@ -4,7 +4,35 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  height: 100%;
+}
+
 body {
   background-color: black;
   font-family: 'Rubik', sans-serif;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar
+{
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 4px;
+  background-color: #5c5c5c;
+}
+
+/* custom highlight */
+::selection {
+  background-color: #ef4444;
+  color: #000000;
 }

@@ -3,20 +3,32 @@ import Link from "next/link";
 import { HiOutlineHome } from "react-icons/hi";
 import { AiOutlineTeam } from "react-icons/ai";
 import { BiDonateHeart } from "react-icons/bi";
+import { useRouter } from "next/router";
 
 export default function Nav() {
+	const router = useRouter();
+
 	return (
 		<div className="w-fit">
-			<div className="flex md:flex-col gap-2 p-2 text-gray-500 rounded-lg bg-gray-900">
+			<div className="flex md:flex-col gap-2 p-2 text-neutral-500 rounded-lg bg-neutral-900">
 				<img className="w-12" src="/assets/logo.png" alt="BlairHacks Logo" />
 				<Link href="/">
-					<HiOutlineHome className="h-12 w-12 p-2 rounded-lg cursor-pointer hover:bg-gray-800" />
+					<HiOutlineHome
+						color={router.pathname === "/" ? "white" : undefined}
+						className="h-12 w-12 p-2 rounded-lg hover:bg-neutral-800 sm:cursor-pointer"
+					/>
 				</Link>
 				<Link href="/team">
-					<AiOutlineTeam className="h-12 w-12 p-2 rounded-lg cursor-pointer hover:bg-gray-800" />
+					<AiOutlineTeam
+						color={router.pathname === "/team" ? "white" : undefined}
+						className="h-12 w-12 p-2 rounded-lg hover:bg-neutral-800 sm:cursor-pointer"
+					/>
 				</Link>
 				<Link href="/donate">
-					<BiDonateHeart className="h-12 w-12 p-2 rounded-lg cursor-pointer hover:bg-gray-800" />
+					<BiDonateHeart
+						color={router.pathname === "/donate" ? "white" : undefined}
+						className="h-12 w-12 p-2 rounded-lg hover:bg-neutral-800 sm:cursor-pointer"
+					/>
 				</Link>
 			</div>
 		</div>

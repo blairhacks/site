@@ -16,7 +16,7 @@ export default function Timeline() {
 			date: "Feburary 17th-18th, 2023",
 			description:
 				"BlairHacks_6 is a in-person 24-hour hackathon hosted by MBHS students in Silver Spring, MD. At BlairHacks, high school students in the DMV area are challenged to bring their innovative ideas to life in the form of websites, apps, and robots. Our hackathon is free and accessible to all high school students thanks to our wonderful sponsors.",
-			link: "https://6.blairhacks.com",
+			//link: "https://6.blairhacks.com",
 			archive: false,
 		},
 		{
@@ -76,7 +76,7 @@ export default function Timeline() {
 								animate={{ opacity: 1 }}
 								transition={{
 									duration: 0.3,
-									delay: 0.2 + 0.1 * i,
+									delay: 0.3 + 0.1 * i,
 									ease: "linear",
 								}}
 								className="flex items-center mb-1 text-lg font-semibold text-white"
@@ -98,7 +98,7 @@ export default function Timeline() {
 							animate={{ opacity: 1 }}
 							transition={{
 								duration: 0.3,
-								delay: 0.23 + 0.1 * i,
+								delay: 0.33 + 0.1 * i,
 								ease: "linear",
 							}}
 							className="block mb-2 text-sm font-normal leading-none text-gray-500"
@@ -110,7 +110,7 @@ export default function Timeline() {
 							animate={{ opacity: 1 }}
 							transition={{
 								duration: 0.3,
-								delay: 0.27 + 0.1 * i,
+								delay: 0.37 + 0.1 * i,
 								ease: "linear",
 							}}
 							className="mb-4 text-base font-normal text-gray-400"

@@ -137,8 +137,9 @@ export default function Sponsors() {
 						href={link}
 						target="blank"
 						key={i}
+						className="w-full sm:w-64"
 					>
-						<div className="w-64 h-48 p-4 flex justify-center items-center rounded-xl bg-neutral-400/20 transition-all duration-300 border-2 border-red-500 border-opacity-0 hover:border-opacity-100">
+						<div className="w-full sm:w-64 h-48 p-4 flex justify-center items-center rounded-xl bg-neutral-400/20 transition-all duration-300 border-2 border-red-500 border-opacity-0 hover:border-opacity-100">
 							<img src={image} alt={name} className={className} />
 						</div>
 					</motion.a>

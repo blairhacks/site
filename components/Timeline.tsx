@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const days = (d1: Date, d2: Date) => {
 	let diff = d1.getTime() - d2.getTime();
@@ -70,25 +71,52 @@ export default function Timeline() {
 							</svg>
 						</span>
 						<a href={link} target="blank">
-							<h3 className="flex items-center mb-1 text-lg font-semibold text-white">
+							<motion.h3
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								transition={{
+									duration: 0.3,
+									delay: 0.2 + 0.1 * i,
+									ease: "linear",
+								}}
+								className="flex items-center mb-1 text-lg font-semibold text-white"
+							>
 								{name}
 								{archive ? (
-									<span className="bg-red-200 text-red-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">
+									<span className="bg-red-500 text-black text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">
 										Archive
 									</span>
 								) : (
-									<span className="bg-green-200 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">
+									<span className="bg-green-500 text-black text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">
 										In {days(startDate, new Date())} days
 									</span>
 								)}
-							</h3>
+							</motion.h3>
 						</a>
-						<time className="block mb-2 text-sm font-normal leading-none text-gray-500">
+						<motion.time
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{
+								duration: 0.3,
+								delay: 0.23 + 0.1 * i,
+								ease: "linear",
+							}}
+							className="block mb-2 text-sm font-normal leading-none text-gray-500"
+						>
 							{date}
-						</time>
-						<p className="mb-4 text-base font-normal text-gray-400">
+						</motion.time>
+						<motion.p
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{
+								duration: 0.3,
+								delay: 0.27 + 0.1 * i,
+								ease: "linear",
+							}}
+							className="mb-4 text-base font-normal text-gray-400"
+						>
 							{description}
-						</p>
+						</motion.p>
 					</li>
 				)
 			)}

@@ -57,23 +57,22 @@ export default function Team() {
 				<div className="flex flex-wrap gap-10 justify-center">
 					{team.map((member, i) => (
 						<div key={i}>
-							<motion.a
-								initial={{ opacity: 0 }}
-								animate={{ opacity: 1 }}
-								transition={{
-									duration: 0.3,
-									delay: i * 0.1,
-									ease: "linear",
-								}}
-								href={member.website}
-								target="blank"
-							>
-								<img
-									className="rounded-full h-48 w-48 hover:scale-105 transform transition duration-300 mb-5 mx-auto"
-									src={member.image}
-									alt={member.name}
-								/>
-							</motion.a>
+							<a href={member.website} target="blank">
+								<div className="hover:scale-105 transform transition duration-300 mb-5 mx-auto">
+									<motion.img
+										initial={{ opacity: 0 }}
+										animate={{ opacity: 1 }}
+										transition={{
+											duration: 0.3,
+											delay: i * 0.1,
+											ease: "linear",
+										}}
+										className="rounded-full h-48 w-48"
+										src={member.image}
+										alt={member.name}
+									/>
+								</div>
+							</a>
 							<motion.h2
 								initial={{ scale: 1.05, opacity: 0 }}
 								animate={{ scale: 1, opacity: 1 }}

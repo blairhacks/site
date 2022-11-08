@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const team = [
 	{
@@ -44,21 +45,55 @@ const team = [
 export default function Team() {
 	return (
 		<div className="text-center">
-			<h1 className="font-bold text-4xl pb-10">Our Team</h1>
+			<motion.h1
+				initial={{ scale: 1.05, opacity: 0 }}
+				animate={{ scale: 1, opacity: 1 }}
+				transition={{ duration: 0.3, ease: "linear" }}
+				className="font-bold text-4xl pb-10"
+			>
+				Our Team
+			</motion.h1>
 			<div className="flex justify-center">
-				<div className="flex flex-wrap gap-5 justify-center">
+				<div className="flex flex-wrap gap-10 justify-center">
 					{team.map((member, i) => (
 						<div key={i}>
-							<a href={member.website} target="blank">
+							<motion.a
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								transition={{
+									duration: 0.3,
+									delay: i * 0.1,
+									ease: "linear",
+								}}
+								href={member.website}
+								target="blank"
+							>
 								<img
-									className="rounded-full h-36 w-36 hover:scale-105 transform transition duration-300 mb-5"
+									className="rounded-full h-48 w-48 hover:scale-105 transform transition duration-300 mb-5 mx-auto"
 									src={member.image}
 									alt={member.name}
 								/>
-							</a>
-							<h2>{member.name}</h2>
-							<h3>{member.position}</h3>
-							<a href={`mailto:${member.email}`}>{member.email}</a>
+							</motion.a>
+							<motion.h2
+								initial={{ scale: 1.05, opacity: 0 }}
+								animate={{ scale: 1, opacity: 1 }}
+								transition={{ duration: 0.3, delay: i * 0.1, ease: "linear" }}
+								className="font-semibold"
+							>
+								{member.name}
+							</motion.h2>
+							<motion.h3
+								initial={{ scale: 1.05, opacity: 0 }}
+								animate={{ scale: 1, opacity: 1 }}
+								transition={{
+									duration: 0.3,
+									delay: i * 0.1 + 0.1,
+									ease: "linear",
+								}}
+							>
+								{member.position}
+							</motion.h3>
+							{/* <a href={`mailto:${member.email}`}>{member.email}</a> */}
 						</div>
 					))}
 				</div>

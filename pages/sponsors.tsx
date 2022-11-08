@@ -96,6 +96,7 @@ export default function Sponsors() {
 						transition={{ duration: 0.3, ease: "linear", delay: 0.5 + 0.1 * i }}
 						href={link}
 						target="blank"
+						key={i}
 					>
 						<div className="w-64 h-48 p-4 flex justify-center items-center rounded-xl bg-neutral-400/20 transition-all duration-300 border-2 border-red-500 border-opacity-0 hover:border-opacity-100">
 							<img src={image} alt={name} className={className} />

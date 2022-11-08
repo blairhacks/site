@@ -106,7 +106,7 @@ export default function Sponsors() {
 					</h3>
 					<p>
 						All our finances are transparent and available thanks to Hack Club
-						Bank's transparency mode.
+						Bank&apos;s transparency mode.
 					</p>
 					<a
 						href="https://bank.hackclub.com/blairhacks"

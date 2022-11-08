@@ -70,7 +70,7 @@ export default function Sponsors() {
 				>
 					<h3 className="font-bold text-lg">Donate Individually</h3>
 					<p>
-						All contributions are welcome! If you're interested in donating
+						All contributions are welcome! If you&apos;re interested in donating
 						individually click the button below!
 					</p>
 					<Link href="/donate" rel="noreferrer noopener" className="w-min">

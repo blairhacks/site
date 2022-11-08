@@ -32,7 +32,7 @@ export default function Home() {
 			>
 				<h2 className="font-semibold text-xl">
 					<a href="https://mini.blairhacks.com" target="blank">
-						BlairHacks Mini '22!
+						BlairHacks Mini &apos;22!
 					</a>
 				</h2>
 				<time>Dec 10th, 10:30 AM to 5:30 PM</time>

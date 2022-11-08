@@ -24,16 +24,11 @@ export default function Background() {
 
 		let starGeometry = new THREE.BufferGeometry();
 		let points: THREE.Vector3[] = [];
-		let speeds: { vel: number; acc: number }[] = [];
 		for (let i = 0; i < 2000; i++) {
 			let star = new THREE.Vector3();
 			star.x = THREE.MathUtils.randFloatSpread(600);
 			star.y = THREE.MathUtils.randFloatSpread(600);
 			star.z = THREE.MathUtils.randFloatSpread(600);
-			speeds.push({
-				vel: 0,
-				acc: 0.02,
-			});
 			points.push(star);
 		}
 		starGeometry.setFromPoints(points);
@@ -50,11 +45,9 @@ export default function Background() {
 
 		const animate = () => {
 			points.forEach((point, i) => {
-				speeds[i].vel += speeds[i].acc;
-				point.y -= speeds[i].vel;
+				point.y -= 0.75;
 				if (point.y < -200) {
 					point.y = 200;
-					speeds[i].vel = 0;
 				}
 			});
 			starGeometry.setFromPoints(points);

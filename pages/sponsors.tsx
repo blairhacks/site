@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -22,6 +22,21 @@ const sponsors = [
 ];
 
 export default function Sponsors() {
+	const [money, setMoney] = useState<number>();
+
+	useEffect(() => {
+		fetch("https://bank.hackclub.com/api/v3/organizations/blairhacks", {
+			method: "GET",
+			headers: {
+				"Content-Type": "application/json",
+			},
+		})
+			.then((res) => res.json())
+			.then((data) => {
+				setMoney(data.balances.balance_cents / 100);
+			});
+	}, []);
+
 	return (
 		<div>
 			<motion.h1
@@ -38,7 +53,7 @@ export default function Sponsors() {
 				transition={{ duration: 0.3, ease: "linear", delay: 0.1 }}
 				className="text-center pb-5"
 			>
-				Help us make this Hackathon Possible
+				Help us make this hackathon possible
 			</motion.p>
 			<div className="flex flex-wrap gap-5 pb-5">
 				<motion.div
@@ -79,11 +94,36 @@ export default function Sponsors() {
 						</div>
 					</Link>
 				</motion.div>
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 0.3, ease: "linear", delay: 0.4 }}
+					className="border-2 border-red-500 rounded-lg p-5 text-white w-full md:w-80"
+				>
+					<h3 className="font-bold text-lg">
+						Our Finances{" "}
+						{money && <span className="text-green-400">(${money})</span>}
+					</h3>
+					<p>
+						All our finances are transparent and available thanks to Hack Club
+						Bank's transparency mode.
+					</p>
+					<a
+						href="https://bank.hackclub.com/blairhacks"
+						target="blank"
+						rel="noreferrer noopener"
+						className="w-min"
+					>
+						<div className="px-4 py-2 bg-red-500 text-black rounded-xl text-lg font-extrabold mt-6 w-max sm:cursor-pointer">
+							Our Finances
+						</div>
+					</a>
+				</motion.div>
 			</div>
 			<motion.h2
 				initial={{ scale: 1.05, opacity: 0 }}
 				animate={{ scale: 1, opacity: 1 }}
-				transition={{ duration: 0.3, ease: "linear", delay: 0.4 }}
+				transition={{ duration: 0.3, ease: "linear", delay: 0.5 }}
 				className="font-bold text-center text-3xl mb-5"
 			>
 				Current Sponsors
@@ -93,7 +133,7 @@ export default function Sponsors() {
 					<motion.a
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
-						transition={{ duration: 0.3, ease: "linear", delay: 0.5 + 0.1 * i }}
+						transition={{ duration: 0.3, ease: "linear", delay: 0.6 + 0.1 * i }}
 						href={link}
 						target="blank"
 						key={i}

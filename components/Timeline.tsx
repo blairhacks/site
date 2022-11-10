@@ -16,7 +16,7 @@ export default function Timeline() {
 			date: "Feburary 17th-18th, 2023",
 			description:
 				"BlairHacks_6 is a in-person 24-hour hackathon hosted by MBHS students in Silver Spring, MD. At BlairHacks, high school students in the DMV area are challenged to bring their innovative ideas to life in the form of websites, apps, and robots. Our hackathon is free and accessible to all high school students thanks to our wonderful sponsors.",
-			//link: "https://6.blairhacks.com",
+			link: "https://6.blairhacks.com",
 			archive: false,
 		},
 		{

@@ -10,7 +10,7 @@ export default function Nav() {
 
 	return (
 		<div className="w-fit">
-			<div className="flex md:flex-col gap-2 p-2 text-neutral-500 rounded-lg bg-neutral-900">
+			<div className="flex md:flex-col gap-2 p-2 text-neutral-500 rounded-lg bg-white bg-opacity-5 border-2 border-neutral-900 backdrop-blur-sm">
 				<img className="w-12" src="/assets/logo.png" alt="BlairHacks Logo" />
 				<Link href="/">
 					<HiOutlineHome

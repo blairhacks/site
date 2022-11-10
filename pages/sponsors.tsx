@@ -60,7 +60,7 @@ export default function Sponsors() {
 			>
 				Help us make this hackathon possible
 			</motion.p>
-			<div className="flex flex-wrap gap-5 pb-5">
+			<div className="flex justify-center flex-wrap gap-5 pb-5">
 				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -133,7 +133,7 @@ export default function Sponsors() {
 			>
 				Current Sponsors
 			</motion.h2>
-			<div className="flex flex-wrap gap-5">
+			<div className="flex justify-center flex-wrap gap-5">
 				{sponsors.map(({ name, link, image, className }, i) => (
 					<motion.a
 						initial={{ opacity: 0 }}

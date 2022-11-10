@@ -15,6 +15,11 @@ const sponsors = [
 		image: "/assets/bank_grant.png",
 	},
 	{
+		name: "MLH Pizza Fund",
+		link: "https://mlh.gitbook.io/major-league-hacking-pizza-fund/GXukjsbPHOyBplCPibsj/",
+		image: "/assets/mlh.png",
+	},
+	{
 		name: "MoCo Community Use of Pubic Facilities",
 		link: "https://www.montgomerycountymd.gov/cupf/",
 		image: "/assets/cupf.png",

@@ -7,7 +7,7 @@ const team = [
 		position: "Director",
 		email: "linkai@blairhacks.com",
 		website: "https://linkaiwu.com",
-		image: "/assets/linkai.jpeg",
+		image: "/assets/linkai.jpg",
 	},
 	{
 		name: "Tinu Vanapamula",

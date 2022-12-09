@@ -119,9 +119,9 @@ export default function Sponsors() {
 						rel="noreferrer noopener"
 						className="w-min"
 					>
-						<div className="px-4 py-2 bg-red-500 text-black rounded-xl text-lg font-extrabold mt-6 w-max sm:cursor-pointer">
+						<button className="px-4 py-2 bg-red-500 text-black rounded-xl text-lg w-max font-extrabold mt-6 sm:cursor-pointer">
 							Our Finances
-						</div>
+						</button>
 					</a>
 				</motion.div>
 			</div>

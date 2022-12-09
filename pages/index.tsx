@@ -43,10 +43,11 @@ export default function Home() {
 					href="https://organize.mlh.io/participants/events/8717-blairhacks-mini"
 					target="_blank"
 					rel="noreferrer noopener"
+					className="w-max"
 				>
-					<div className="px-4 py-2 bg-black text-white rounded-xl text-lg font-extrabold mt-6 w-min">
+					<button className="px-4 py-2 bg-black text-white rounded-xl text-lg font-extrabold mt-6 w-max">
 						Register
-					</div>
+					</button>
 				</a>
 			</motion.div>
 			<Timeline />

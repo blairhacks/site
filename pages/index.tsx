@@ -24,7 +24,7 @@ export default function Home() {
 				</motion.p>
 			</div>
 			{/* Card for BH Mini */}
-			<motion.div
+			{/* <motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 0.3, ease: "linear", delay: 0.2 }}
@@ -32,7 +32,7 @@ export default function Home() {
 			>
 				<h2 className="font-semibold text-xl">
 					<a href="https://mini.blairhacks.com" target="blank">
-						BlairHacks Mini &apos;22!
+						BlairHacks_6
 					</a>
 				</h2>
 				<time>Dec 10th, 10:30 AM to 5:30 PM</time>
@@ -49,7 +49,7 @@ export default function Home() {
 						Register
 					</button>
 				</a>
-			</motion.div>
+			</motion.div> */}
 			<Timeline />
 		</div>
 	);

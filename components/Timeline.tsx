@@ -25,9 +25,9 @@ export default function Timeline() {
 			endDate: new Date("2022-12-10"),
 			date: "December 10th, 2022",
 			description:
-				"Introducing BlairHacks' newest event (and first IRL event since 2020)! BlairHacks Mini is a day-long event where high school students around Montgomery County will come together to build apps, games, and hardware. Look forward to a day of hands-on coding + tech workshops, fun activities, and more!",
+				"Introducing BlairHacks' first IRL event since 2020! BlairHacks Mini '22 was a day-long event where high school students around Montgomery County will come together to build apps, games, and hardware. It was a day filled with hands-on coding + tech workshops, fun activities, and more!",
 			link: "https://mini.blairhacks.com",
-			archive: false,
+			archive: true,
 		},
 		{
 			name: "BlairHacks_5",

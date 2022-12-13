@@ -4,6 +4,7 @@ import { HiOutlineHome } from "react-icons/hi";
 import { AiOutlineTeam } from "react-icons/ai";
 import { BiDonateHeart } from "react-icons/bi";
 import { useRouter } from "next/router";
+import { MdOutlinePhotoLibrary } from "react-icons/md";
 
 export default function Nav() {
 	const router = useRouter();
@@ -21,6 +22,12 @@ export default function Nav() {
 				<Link href="/team">
 					<AiOutlineTeam
 						color={router.pathname === "/team" ? "white" : undefined}
+						className="h-12 w-12 p-2 rounded-lg hover:bg-opacity-50 hover:bg-neutral-800 sm:cursor-pointer"
+					/>
+				</Link>
+				<Link href="/gallery">
+					<MdOutlinePhotoLibrary
+						color={router.pathname === "/gallery" ? "white" : undefined}
 						className="h-12 w-12 p-2 rounded-lg hover:bg-opacity-50 hover:bg-neutral-800 sm:cursor-pointer"
 					/>
 				</Link>

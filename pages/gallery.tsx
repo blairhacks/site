@@ -30,7 +30,7 @@ export default function gallery() {
 						/>
 					</a>
 					<div className="absolute bottom-0 py-2 rounded-b-lg w-full text-black text-center bg-white bg-opacity-40 backdrop-blur-md">
-						<p>BlairHacks Mini '22</p>
+						<p>BlairHacks Mini &apos;22</p>
 					</div>
 				</motion.div>
 			</div>

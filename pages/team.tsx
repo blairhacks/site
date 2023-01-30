@@ -21,24 +21,21 @@ const team = [
 		position: "Finance Lead",
 		email: "anika@blairhacks.com",
 		website: "https://www.linkedin.com/in/anika-rai-8a04b2201/",
-		image:
-			"https://media-exp1.licdn.com/dms/image/D4D03AQFIJ7mm7onx9Q/profile-displayphoto-shrink_200_200/0/1647114410703?e=1671667200&v=beta&t=FO0QaoaQ6GRo3ElTPD5w6k1z3uVVPneg2KpCtBCWc8U",
+		image: "/assets/anika.jpg",
 	},
 	{
 		name: "Annie Gao",
 		position: "Marketing Lead",
 		email: "annie@blairhacks.com",
 		website: "https://www.linkedin.com/in/anniegao24/",
-		image:
-			"https://media-exp1.licdn.com/dms/image/C5603AQEwm7Zh_1JEtA/profile-displayphoto-shrink_200_200/0/1655784236445?e=1671667200&v=beta&t=ZLbrO3SngKfNkPaw1jkYr0vHh1cxSHfgxZm-qKJiLJY",
+		image: "/assets/annie.jpg",
 	},
 	{
 		name: "Patrick Zhang",
 		position: "Logistics Lead",
 		email: "patrick@blairhacks.com",
 		website: "https://pertark.com",
-		image:
-			"https://media-exp1.licdn.com/dms/image/C4E03AQHFvK1pasAP7Q/profile-displayphoto-shrink_200_200/0/1662428152507?e=1671667200&v=beta&t=lme-SgLSo8b4mepajSqUJOSajkCYwF5nakU-1VagkqY",
+		image: "/assets/patrick.jpg",
 	},
 ];
 

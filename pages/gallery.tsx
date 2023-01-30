@@ -19,12 +19,9 @@ export default function gallery() {
 					transition={{ duration: 0.3, ease: "linear", delay: 0.1 }}
 					className="w-full md:w-96 relative hover:scale-105 transition-all duration-300 ease-in-out sm:cursor-pointer"
 				>
-					<a
-						href="https://cloud.tinu.tech/index.php/s/MdcRiKCw3SQzniw"
-						target="blank"
-					>
+					<a href="https://photos.app.goo.gl/uEDYgtAcorm3sxcLA" target="blank">
 						<img
-							src="https://cloud.tinu.tech/index.php/apps/files_sharing/publicpreview/MdcRiKCw3SQzniw?file=/IMG_0896.JPG&fileId=387484&x=1920&y=1080&a=true"
+							src="/assets/bhmini22.jpg"
 							alt="BH Mini '22"
 							className="rounded-lg"
 						/>

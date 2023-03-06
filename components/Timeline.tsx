@@ -11,9 +11,9 @@ export default function Timeline() {
 	const events = [
 		{
 			name: "BlairHacks_6",
-			startDate: new Date("2023-02-20"),
-			endDate: new Date("2023-02-21"),
-			date: "Feburary 17th-18th, 2023",
+			startDate: new Date("2023-03-25"),
+			endDate: new Date("2023-03-26"),
+			date: "March 25th-26th, 2023",
 			description:
 				"BlairHacks_6 is a in-person 24-hour hackathon hosted by MBHS students in Silver Spring, MD. At BlairHacks, high school students in the DMV area are challenged to bring their innovative ideas to life in the form of websites, apps, and robots. Our hackathon is free and accessible to all high school students thanks to our wonderful sponsors.",
 			link: "https://6.blairhacks.com",

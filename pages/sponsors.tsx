@@ -10,14 +10,74 @@ const sponsors = [
 		className: "h-full",
 	},
 	{
+		name: "Mindpoint Group",
+		link: "https://www.mindpointgroup.com/",
+		image: "/assets/mindpoint.svg",
+		className: "h-full",
+	},
+	{
+		name: "Subway",
+		link: "https://www.subway.com/",
+		image: "/assets/subway.svg",
+		className: "h-full",
+	},
+	{
+		name: "Lion Solutions",
+		link: "https://lionsolutions.com/",
+		image: "/assets/lion.png",
+		className: "h-full p-3",
+	},
+	{
 		name: "Hack Club x FIRST grant",
 		link: "https://hackclub.com/hackathons/grant/",
 		image: "/assets/bank_grant.png",
 	},
 	{
+		name: "Sticker Giant",
+		link: "https://www.stickergiant.com/",
+		image: "/assets/stickergiant.png",
+		className: "h-full p-4",
+	},
+	{
 		name: "MLH Pizza Fund",
 		link: "https://mlh.gitbook.io/major-league-hacking-pizza-fund/GXukjsbPHOyBplCPibsj/",
 		image: "/assets/mlh.png",
+	},
+	{
+		name: "Leangap",
+		link: "https://www.leangap.org/",
+		image: "/assets/leangap.svg",
+		className: "h-full p-4",
+	},
+	{
+		name: "AOPS",
+		link: "https://artofproblemsolving.com/",
+		image: "/assets/aops.svg",
+		className: "h-full p-4",
+	},
+	{
+		name: "Taskade",
+		link: "https://www.taskade.com/",
+		image: "/assets/taskade.png",
+		className: "w-full p-4",
+	},
+	{
+		name: "echo3D",
+		link: "https://www.echo3d.com",
+		image: "/assets/echo3D.png",
+		className: "w-full rounded-lg",
+	},
+	{
+		name: "Wolfram",
+		link: "https://wolfram.com/",
+		image: "/assets/wolfram.png",
+		className: "w-full p-6",
+	},
+	{
+		name: "Digital Ocean",
+		link: "https://try.digitalocean.com/developer-cloud/",
+		image: "/assets/digitalocean.png",
+		className: "w-full p-6",
 	},
 	{
 		name: "MoCo Community Use of Pubic Facilities",
@@ -144,7 +204,7 @@ export default function Sponsors() {
 						key={i}
 						className="w-full sm:w-64"
 					>
-						<div className="w-full sm:w-64 h-48 p-4 flex justify-center items-center rounded-xl bg-neutral-400/20 transition-all duration-300 border-2 border-red-500 border-opacity-0 hover:border-opacity-100">
+						<div className="w-full sm:w-64 h-48 p-4 flex justify-center items-center rounded-xl bg-neutral-400/20 backdrop-blur-sm transition-all duration-300 border-2 border-red-500 border-opacity-0 hover:border-opacity-100">
 							<img src={image} alt={name} className={className} />
 						</div>
 					</motion.a>

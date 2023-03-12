@@ -33,6 +33,12 @@ const sponsors = [
 		image: "/assets/bank_grant.png",
 	},
 	{
+		name: "Postman",
+		link: "https://www.postman.com/student-program/student-expert/?utm_campaign=UOE&utm_medium=referral&utm_source=external&utm_term=sponsorship&utm_content=Blair-Hacks-25032023",
+		image: "/assets/postman.svg",
+		className: "h-full p-3",
+	},
+	{
 		name: "Sticker Giant",
 		link: "https://www.stickergiant.com/",
 		image: "/assets/stickergiant.png",

@@ -23,24 +23,26 @@ export default function Home() {
 					An annual hackathon hosted by MBHS students in Silver Spring, MD.
 				</motion.p>
 			</div>
-			{/* Card for BH Mini */}
-			{/* <motion.div
+			{/* Card for BH6 */}
+			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 0.3, ease: "linear", delay: 0.2 }}
-				className="bg-emerald-500 rounded-lg p-5 mb-10 w-full md:w-96 text-black"
+				style={{ backgroundColor: "#D4AF37" }}
+				className="rounded-lg p-5 mb-10 w-full md:w-96 text-black"
 			>
 				<h2 className="font-semibold text-xl">
-					<a href="https://mini.blairhacks.com" target="blank">
+					<a href="https://6.blairhacks.com" target="blank">
 						BlairHacks_6
 					</a>
 				</h2>
-				<time>Dec 10th, 10:30 AM to 5:30 PM</time>
-				<a href="https://g.page/mcplRockvilleMemorial" target="blank">
-					<p>@ Rockville Memorial Libary</p>
+				<time>March 25-26, </time>
+				<time>10 AM to 6 PM</time>
+				<a href="https://goo.gl/maps/jMyUCS3fzMaLHzmg7" target="blank">
+					<p>@ Virtual + Montgomery College Rockville</p>
 				</a>
 				<a
-					href="https://organize.mlh.io/participants/events/8717-blairhacks-mini"
+					href="https://6.blairhacks.com"
 					target="_blank"
 					rel="noreferrer noopener"
 					className="w-max"
@@ -49,7 +51,7 @@ export default function Home() {
 						Register
 					</button>
 				</a>
-			</motion.div> */}
+			</motion.div>
 			<Timeline />
 		</div>
 	);

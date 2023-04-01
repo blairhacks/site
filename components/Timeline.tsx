@@ -15,9 +15,9 @@ export default function Timeline() {
 			endDate: new Date("2023-03-26"),
 			date: "March 25th-26th, 2023",
 			description:
-				"BlairHacks_6 is a in-person 24-hour hackathon hosted by MBHS students in Silver Spring, MD. At BlairHacks, high school students in the DMV area are challenged to bring their innovative ideas to life in the form of websites, apps, and robots. Our hackathon is free and accessible to all high school students thanks to our wonderful sponsors.",
+				"BlairHacks_6 was an in-person 24-hour hackathon hosted by MBHS students in Silver Spring, MD. At BlairHacks, high school students in the DMV area were challenged to bring their innovative ideas to life in the form of websites, apps, and robots. Our hackathon was free and accessible to all high school students thanks to our wonderful sponsors.",
 			link: "https://6.blairhacks.com",
-			archive: false,
+			archive: true,
 		},
 		{
 			name: "BlairHacks Mini '22",

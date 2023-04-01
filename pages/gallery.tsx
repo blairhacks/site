@@ -12,12 +12,25 @@ export default function gallery() {
 			>
 				Gallery
 			</motion.h1>
-			<div className="flex flex-wrap gap-3">
+			<div className="flex flex-wrap gap-5">
 				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 0.3, ease: "linear", delay: 0.1 }}
-					className="w-full md:w-96 relative hover:scale-105 transition-all duration-300 ease-in-out sm:cursor-pointer"
+					className="w-full md:w-96 relative hover:scale-[1.02] transition-all duration-300 ease-in-out sm:cursor-pointer"
+				>
+					<a href="https://photos.app.goo.gl/NabaQgWSoi224WE57" target="blank">
+						<img src="/assets/bh6.jpg" alt="BH6" className="rounded-lg" />
+					</a>
+					<div className="absolute bottom-0 py-2 rounded-b-lg w-full text-black text-center bg-white bg-opacity-40 backdrop-blur-md">
+						<p>BlairHacks_6</p>
+					</div>
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 0.3, ease: "linear", delay: 0.2 }}
+					className="w-full md:w-96 relative hover:scale-[1.02] transition-all duration-300 ease-in-out sm:cursor-pointer"
 				>
 					<a href="https://photos.app.goo.gl/uEDYgtAcorm3sxcLA" target="blank">
 						<img

@@ -23,26 +23,26 @@ export default function Home() {
 					An annual hackathon hosted by MBHS students in Silver Spring, MD.
 				</motion.p>
 			</div>
-			{/* Card for BH6 */}
-			{/* <motion.div
+			<p className="pb-2 text-sm text-neutral-300">Our friends at poolesville_hacks present</p>
+			{/* Card for poolesville_hacks */}
+			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 0.3, ease: "linear", delay: 0.2 }}
-				style={{ backgroundColor: "#D4AF37" }}
-				className="rounded-lg p-5 mb-10 w-full md:w-96 text-black"
+				className="rounded-lg p-5 bg-violet-500 mb-10 w-full md:w-96 text-black"
 			>
 				<h2 className="font-semibold text-xl">
-					<a href="https://6.blairhacks.com" target="blank">
-						BlairHacks_6
+					<a href="https://poolesvillehacks.tech/" target="blank">
+						poolesville_hacks 2
 					</a>
 				</h2>
-				<time>March 25-26, </time>
-				<time>10 AM to 6 PM</time>
-				<a href="https://goo.gl/maps/jMyUCS3fzMaLHzmg7" target="blank">
-					<p>@ Virtual + Montgomery College Rockville</p>
+				<time>April 15th, </time>
+				<time>10 AM to 8 PM</time>
+				<a href="https://goo.gl/maps/yB9A392f4qEFWDD49" target="blank">
+					<p>@ Poolesville Baptist Chruch</p>
 				</a>
 				<a
-					href="https://6.blairhacks.com"
+					href="https://organize.mlh.io/participants/events/8630-poolesville_hacks-2"
 					target="_blank"
 					rel="noreferrer noopener"
 					className="w-max"
@@ -51,7 +51,7 @@ export default function Home() {
 						Register
 					</button>
 				</a>
-			</motion.div> */}
+			</motion.div>
 			<Timeline />
 		</div>
 	);

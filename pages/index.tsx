@@ -37,7 +37,7 @@ export default function Home() {
 					</a>
 				</h2>
 				<time>April 15th, </time>
-				<time>10 AM to 8 PM</time>
+				<time>9 AM to 8:30 PM</time>
 				<a href="https://goo.gl/maps/yB9A392f4qEFWDD49" target="blank">
 					<p>@ Poolesville Baptist Chruch</p>
 				</a>

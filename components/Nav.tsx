@@ -19,12 +19,12 @@ export default function Nav() {
 						className="h-12 w-12 p-2 rounded-lg hover:bg-opacity-50 hover:bg-neutral-800 sm:cursor-pointer"
 					/>
 				</Link>
-				<Link href="/team">
+				{/* <Link href="/team">
 					<AiOutlineTeam
 						color={router.pathname === "/team" ? "white" : undefined}
 						className="h-12 w-12 p-2 rounded-lg hover:bg-opacity-50 hover:bg-neutral-800 sm:cursor-pointer"
 					/>
-				</Link>
+				</Link> */}
 				<Link href="/gallery">
 					<MdOutlinePhotoLibrary
 						color={router.pathname === "/gallery" ? "white" : undefined}

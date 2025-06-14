@@ -1,4 +1,3 @@
-import { animate } from "motion";
 import React, { useEffect } from "react";
 import * as THREE from "three";
 

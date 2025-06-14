@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function gallery() {
@@ -20,9 +21,9 @@ export default function gallery() {
 					className="w-full md:w-96 relative hover:scale-[1.02] transition-all duration-300 ease-in-out sm:cursor-pointer"
 				>
 					<a href="https://photos.app.goo.gl/NabaQgWSoi224WE57" target="blank">
-						<img src="/assets/bh6.jpg" alt="BH6" className="rounded-lg" />
+						<Image src="/assets/bh6.jpg" alt="BH6" className="rounded-lg" width={384} height={256} />
 					</a>
-					<div className="absolute bottom-0 py-2 rounded-b-lg w-full text-black text-center bg-white bg-opacity-40 backdrop-blur-md">
+					<div className="absolute bottom-0 py-2 rounded-b-lg w-full text-black text-center bg-white/40 backdrop-blur-md">
 						<p>BlairHacks_6</p>
 					</div>
 				</motion.div>
@@ -33,13 +34,15 @@ export default function gallery() {
 					className="w-full md:w-96 relative hover:scale-[1.02] transition-all duration-300 ease-in-out sm:cursor-pointer"
 				>
 					<a href="https://photos.app.goo.gl/uEDYgtAcorm3sxcLA" target="blank">
-						<img
+						<Image
 							src="/assets/bhmini22.jpg"
 							alt="BH Mini '22"
 							className="rounded-lg"
+							width={384}
+							height={256}
 						/>
 					</a>
-					<div className="absolute bottom-0 py-2 rounded-b-lg w-full text-black text-center bg-white bg-opacity-40 backdrop-blur-md">
+					<div className="absolute bottom-0 py-2 rounded-b-lg w-full text-black text-center bg-white/40 backdrop-blur-md">
 						<p>BlairHacks Mini &apos;22</p>
 					</div>
 				</motion.div>

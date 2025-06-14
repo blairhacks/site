@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -210,8 +211,8 @@ export default function Sponsors() {
 						key={i}
 						className="w-full sm:w-64"
 					>
-						<div className="w-full sm:w-64 h-48 p-4 flex justify-center items-center rounded-xl bg-neutral-400/20 backdrop-blur-sm transition-all duration-300 border-2 border-red-500 border-opacity-0 hover:border-opacity-100">
-							<img src={image} alt={name} className={className} />
+						<div className="w-full sm:w-64 h-48 p-4 flex justify-center items-center rounded-xl bg-neutral-400/20 backdrop-blur-sm transition-all duration-300 border-2 border-red-500/0 hover:border-red-500">
+							<Image src={image} alt={name} className={className || "h-full w-auto"} width={300} height={200} style={{ width: 'auto', height: 'auto', maxWidth: '100%', maxHeight: '100%' }} unoptimized />
 						</div>
 					</motion.a>
 				))}

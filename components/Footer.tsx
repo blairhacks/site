@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { FiTwitter, FiGithub, FiYoutube, FiMail } from "react-icons/fi";
 
@@ -47,7 +48,7 @@ export default function Footer() {
 				<p>Nonprofit EIN: 81-2908499</p>
 			</div>
 			<a href="https://bank.hackclub.com/blairhacks" target="blank">
-				<img src="/assets/hcb-logo.svg" />
+				<Image src="/assets/hcb-logo.svg" alt="Hack Club Bank Logo" width={120} height={60} style={{ width: 'auto', height: 'auto' }} unoptimized />
 			</a>
 		</div>
 	);

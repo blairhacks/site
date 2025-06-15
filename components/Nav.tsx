@@ -1,14 +1,16 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineHome } from "react-icons/hi";
 import { AiOutlineTeam } from "react-icons/ai";
 import { BiDonateHeart } from "react-icons/bi";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import { MdOutlinePhotoLibrary } from "react-icons/md";
 
 export default function Nav() {
-  const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <div className="w-fit">
@@ -22,7 +24,7 @@ export default function Nav() {
         />
         <Link href="/">
           <HiOutlineHome
-            color={router.pathname === "/" ? "white" : undefined}
+            color={pathname === "/" ? "white" : undefined}
             className="h-12 w-12 p-2 rounded-lg hover:bg-neutral-800/50 sm:cursor-pointer"
           />
         </Link>
@@ -34,13 +36,13 @@ export default function Nav() {
 				</Link> */}
         <Link href="/gallery">
           <MdOutlinePhotoLibrary
-            color={router.pathname === "/gallery" ? "white" : undefined}
+            color={pathname === "/gallery" ? "white" : undefined}
             className="h-12 w-12 p-2 rounded-lg hover:bg-neutral-800/50 sm:cursor-pointer"
           />
         </Link>
         <Link href="/sponsors">
           <BiDonateHeart
-            color={router.pathname === "/sponsors" ? "white" : undefined}
+            color={pathname === "/sponsors" ? "white" : undefined}
             className="h-12 w-12 p-2 rounded-lg hover:bg-neutral-800/50 sm:cursor-pointer"
           />
         </Link>

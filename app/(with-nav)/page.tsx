@@ -21,11 +21,12 @@ export default function Home() {
           transition={{ duration: 0.3, ease: "linear", delay: 0.1 }}
           className="text-sm md:text-xl"
         >
-          An annual hackathon hosted by MBHS students in Silver Spring, MD.
+          An annual hackathon hosted by students at MBHS and other schools in
+          Montgomery County, MD.
         </motion.p>
       </div>
       <p className="pb-2 text-sm text-neutral-300">
-        Our friends at poolesville_hacks present
+        Stay tuned for our next hackathon, coming fall 2025!
       </p>
       <motion.div
         initial={{ opacity: 0 }}
@@ -34,23 +35,15 @@ export default function Home() {
         className="rounded-lg p-5 bg-violet-500 mb-10 w-full md:w-96 text-black"
       >
         <h2 className="font-semibold text-xl">
-          <a href="https://poolesvillehacks.tech/" target="blank">
-            poolesville_hacks 2
+          <a href="" target="blank">
+            DCHacks
           </a>
         </h2>
-        <time>April 15th, </time>
-        <time>9 AM to 8:30 PM</time>
-        <a href="https://goo.gl/maps/yB9A392f4qEFWDD49" target="blank">
-          <p>@ Poolesville Baptist Chruch</p>
-        </a>
-        <a
-          href="https://organize.mlh.io/participants/events/8630-poolesville_hacks-2"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="w-max"
-        >
+        <p>Fall 2025, Date TBD</p>
+        <p>DC Metro Area, Location TBD</p>
+        <a href="" target="_blank" rel="noreferrer noopener" className="w-max">
           <button className="px-4 py-2 bg-black text-white rounded-xl text-lg font-extrabold mt-6 w-max">
-            Register
+            Learn More
           </button>
         </a>
       </motion.div>

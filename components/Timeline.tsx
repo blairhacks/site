@@ -12,6 +12,16 @@ const days = (d1: Date, d2: Date) => {
 export default function Timeline() {
   const events = [
     {
+      name: "Montgomery County Hackathon",
+      startDate: new Date("2024-12-16"),
+      endDate: new Date("2024-12-17"),
+      date: "December 16th-17th, 2024",
+      description:
+        "Montgomery County Hackathon was an in-person hackathon in Rockville, MD.",
+      link: "https://www.instagram.com/mchackathon2023/",
+      archive: true,
+    },
+    {
       name: "BlairHacks_6",
       startDate: new Date("2023-03-25"),
       endDate: new Date("2023-03-26"),

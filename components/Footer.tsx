@@ -47,7 +47,7 @@ export default function Footer() {
         <p>Fiscally sponsored by The Hack Foundation</p>
         <p>Nonprofit EIN: 81-2908499</p>
       </div>
-      <a href="https://bank.hackclub.com/blairhacks" target="blank">
+      <a href="https://hcb.hackclub.com/dchacks" target="blank">
         <Image
           src="/assets/hcb-logo.svg"
           alt="Hack Club Bank Logo"

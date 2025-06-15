@@ -24,7 +24,9 @@ export default function Home() {
           An annual hackathon hosted by MBHS students in Silver Spring, MD.
         </motion.p>
       </div>
-      <p className="pb-2 text-sm text-neutral-300">Our friends at poolesville_hacks present</p>
+      <p className="pb-2 text-sm text-neutral-300">
+        Our friends at poolesville_hacks present
+      </p>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

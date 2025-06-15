@@ -3,7 +3,7 @@ import React from "react";
 export default function Donate() {
   return (
     <iframe
-      src="https://bank.hackclub.com/donations/start/blairhacks"
+      src="https://hcb.hackclub.com/donations/start/dchacks"
       style={{ height: "100vh" }}
       name="donateFrame"
       scrolling="yes"

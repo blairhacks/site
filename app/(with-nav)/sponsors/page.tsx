@@ -98,7 +98,7 @@ export default function Sponsors() {
   const [money, setMoney] = useState<number>();
 
   useEffect(() => {
-    fetch("https://bank.hackclub.com/api/v3/organizations/blairhacks", {
+    fetch("https://hcb.hackclub.com/api/v3/organizations/dchacks", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -175,14 +175,16 @@ export default function Sponsors() {
         >
           <h3 className="font-bold text-lg">
             Our Finances{" "}
-            {money && <span className="text-green-400">(${money})</span>}
+            {money !== undefined && (
+              <span className="text-green-400">(${money})</span>
+            )}
           </h3>
           <p>
             All our finances are transparent and available thanks to Hack Club
             Bank&apos;s transparency mode.
           </p>
           <a
-            href="https://bank.hackclub.com/blairhacks"
+            href="https://hcb.hackclub.com/dchacks"
             target="blank"
             rel="noreferrer noopener"
             className="w-min"

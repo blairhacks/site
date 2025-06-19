@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { FiTwitter, FiGithub, FiYoutube, FiMail } from "react-icons/fi";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -9,45 +10,45 @@ export default function Footer() {
       <div>
         <div className="flex gap-3 py-2 text-xl items-center">
           <h2 className="text-2xl font-bold">BlairHacks</h2>
-          <a
+          <Link
             href="https://instagram.com/blairhacks"
             target="blank"
             className="duration-200 hover:scale-110"
           >
             <FaInstagram />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://twitter.com/blairhacks"
             target="blank"
             className="duration-200 hover:scale-110"
           >
             <FiTwitter />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://github.com/blairhacks"
             target="blank"
             className="duration-200 hover:scale-110"
           >
             <FiGithub />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.youtube.com/channel/UCMefEBkMD51mlCvy3uGuhaw"
             target="blank"
             className="duration-200 hover:scale-110"
           >
             <FiYoutube />
-          </a>
-          <a
+          </Link>
+          <Link
             href="mailto:team@blairhacks.com"
             className="duration-200 hover:scale-110"
           >
             <FiMail />
-          </a>
+          </Link>
         </div>
         <p>Fiscally sponsored by The Hack Foundation</p>
         <p>Nonprofit EIN: 81-2908499</p>
       </div>
-      <a href="https://hcb.hackclub.com/dchacks" target="blank">
+      <Link href="https://hcb.hackclub.com/dchacks" target="blank">
         <Image
           src="/assets/hcb-logo.svg"
           alt="Hack Club Bank Logo"
@@ -56,7 +57,7 @@ export default function Footer() {
           style={{ width: "auto", height: "auto" }}
           unoptimized
         />
-      </a>
+      </Link>
     </div>
   );
 }

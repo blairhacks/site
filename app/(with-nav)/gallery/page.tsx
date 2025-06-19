@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Gallery() {
   return (
@@ -21,7 +22,10 @@ export default function Gallery() {
           transition={{ duration: 0.3, ease: "linear", delay: 0.1 }}
           className="w-full md:w-96 relative hover:scale-[1.02] transition-all duration-300 ease-in-out sm:cursor-pointer"
         >
-          <a href="https://photos.app.goo.gl/NabaQgWSoi224WE57" target="blank">
+          <Link
+            href="https://photos.app.goo.gl/NabaQgWSoi224WE57"
+            target="blank"
+          >
             <Image
               src="/assets/bh6.jpg"
               alt="BH6"
@@ -29,7 +33,7 @@ export default function Gallery() {
               width={384}
               height={256}
             />
-          </a>
+          </Link>
           <div className="absolute bottom-0 py-2 rounded-b-lg w-full text-black text-center bg-white/40 backdrop-blur-md">
             <p>BlairHacks_6</p>
           </div>
@@ -40,7 +44,10 @@ export default function Gallery() {
           transition={{ duration: 0.3, ease: "linear", delay: 0.2 }}
           className="w-full md:w-96 relative hover:scale-[1.02] transition-all duration-300 ease-in-out sm:cursor-pointer"
         >
-          <a href="https://photos.app.goo.gl/uEDYgtAcorm3sxcLA" target="blank">
+          <Link
+            href="https://photos.app.goo.gl/uEDYgtAcorm3sxcLA"
+            target="blank"
+          >
             <Image
               src="/assets/bhmini22.jpg"
               alt="BH Mini '22"
@@ -48,9 +55,9 @@ export default function Gallery() {
               width={384}
               height={256}
             />
-          </a>
+          </Link>
           <div className="absolute bottom-0 py-2 rounded-b-lg w-full text-black text-center bg-white/40 backdrop-blur-md">
-            <p>BlairHacks Mini '22</p>
+            <p>BlairHacks Mini &apos;22</p>
           </div>
         </motion.div>
       </div>

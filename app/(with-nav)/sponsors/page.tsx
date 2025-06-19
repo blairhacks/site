@@ -183,7 +183,7 @@ export default function Sponsors() {
             All our finances are transparent and available thanks to Hack Club
             Bank&apos;s transparency mode.
           </p>
-          <a
+          <Link
             href="https://hcb.hackclub.com/dchacks"
             target="blank"
             rel="noreferrer noopener"
@@ -192,7 +192,7 @@ export default function Sponsors() {
             <button className="px-4 py-2 bg-red-500 text-black rounded-xl text-lg w-max font-extrabold mt-6 sm:cursor-pointer">
               Our Finances
             </button>
-          </a>
+          </Link>
         </motion.div>
       </div>
       <motion.h2

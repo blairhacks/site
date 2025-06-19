@@ -2,6 +2,7 @@
 import React from "react";
 import Timeline from "../../components/Timeline";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -35,17 +36,22 @@ export default function Home() {
         className="rounded-lg p-5 bg-violet-500 mb-10 w-full md:w-96 text-black"
       >
         <h2 className="font-semibold text-xl">
-          <a href="" target="blank">
+          <Link href="" target="blank">
             DCHacks
-          </a>
+          </Link>
         </h2>
         <p>Fall 2025, Date TBD</p>
         <p>DC Metro Area, Location TBD</p>
-        <a href="" target="_blank" rel="noreferrer noopener" className="w-max">
+        <Link
+          href="https://dchacks.vercel.app"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="w-max"
+        >
           <button className="px-4 py-2 bg-black text-white rounded-xl text-lg font-extrabold mt-6 w-max">
             Learn More
           </button>
-        </a>
+        </Link>
       </motion.div>
       <Timeline />
     </div>

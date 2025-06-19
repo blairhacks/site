@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const days = (d1: Date, d2: Date) => {
   let diff = d1.getTime() - d2.getTime();
@@ -45,7 +46,7 @@ export default function Timeline() {
       name: "BlairHacks_5",
       startDate: new Date("2022-02-18"),
       endDate: new Date("2022-02-20"),
-      date: "Feburary 18th-20th, 2022",
+      date: "February 18th-20th, 2022",
       description:
         "BlairHacks_5 was a virtual 36-hour hackathon hosted by MBHS students in Silver Spring, MD. At BlairHacks_5, high school students in the DMV area were challenged to bring their innovative ideas to life in the form of websites, apps, and robots. Our hackathon was free and accessible to all high school students thanks to our wonderful sponsors.",
       link: "https://5.blairhacks.com",
@@ -55,7 +56,7 @@ export default function Timeline() {
       name: "BlairHacks_4",
       startDate: new Date("2020-02-19"),
       endDate: new Date("2021-02-21"),
-      date: "Feburary 28th-29th, 2020",
+      date: "February 28th-29th, 2020",
       description:
         "BlairHacks_4 was an in-person hackathon hosted by MBHS students in Silver Spring, MD. BlairHacks_4 featured skill workshops, fun mini-events, and one-on-one assistance from our fantastic mentors. Our hackathon was free and accessible to all high school students thanks to our wonderful sponsors.",
       archive: true,
@@ -82,7 +83,7 @@ export default function Timeline() {
                 ></path>
               </svg>
             </span>
-            <a href={link} target="blank">
+            <Link href={link || ""} target="blank">
               <motion.h3
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -104,7 +105,7 @@ export default function Timeline() {
                   </span>
                 )}
               </motion.h3>
-            </a>
+            </Link>
             <motion.time
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

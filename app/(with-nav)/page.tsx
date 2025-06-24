@@ -43,7 +43,7 @@ export default function Home() {
         <p>Fall 2025, Date TBD</p>
         <p>DC Metro Area, Location TBD</p>
         <Link
-          href="www.dchacks.org"
+          href="https://www.dchacks.org"
           target="_blank"
           rel="noreferrer noopener"
           className="w-max"

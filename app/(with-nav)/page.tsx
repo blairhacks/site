@@ -43,7 +43,7 @@ export default function Home() {
         <p>Fall 2025, Date TBD</p>
         <p>DC Metro Area, Location TBD</p>
         <Link
-          href="https://dchacks.vercel.app"
+          href="www.dchacks.org"
           target="_blank"
           rel="noreferrer noopener"
           className="w-max"

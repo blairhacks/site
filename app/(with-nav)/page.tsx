@@ -27,7 +27,7 @@ export default function Home() {
         </motion.p>
       </div>
       <p className="pb-2 text-sm text-neutral-300">
-        Stay tuned for our next hackathon, coming fall 2025!
+        Stay tuned for our next hackathon, coming spring 2026!
       </p>
       <motion.div
         initial={{ opacity: 0 }}

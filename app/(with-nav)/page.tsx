@@ -27,7 +27,7 @@ export default function Home() {
         </motion.p>
       </div>
       <p className="pb-2 text-sm text-neutral-300">
-        Stay tuned for our next hackathon, coming fall 2025!
+        Stay tuned for our next hackathon, coming spring 2026!
       </p>
       <motion.div
         initial={{ opacity: 0 }}
@@ -37,13 +37,13 @@ export default function Home() {
       >
         <h2 className="font-semibold text-xl">
           <Link href="" target="blank">
-            DCHacks
+            BlairHacks8
           </Link>
         </h2>
-        <p>Fall 2025, Date TBD</p>
-        <p>DC Metro Area, Location TBD</p>
+        <p>Spring 2026, May 23-25th</p>
+        <p>Location TBD</p>
         <Link
-          href="https://www.dchacks.org"
+          href="https://www.8.blairhacks.org"
           target="_blank"
           rel="noreferrer noopener"
           className="w-max"
